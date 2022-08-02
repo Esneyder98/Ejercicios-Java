@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class main {
     public static void main(String[] args) {
 
@@ -8,9 +10,11 @@ public class main {
         cocheimp.save(coche2);
 
         System.out.println("save: "+cocheimp.save(coche1));
-        System.out.println("findAll: "+cocheimp.findAll());
+        //agregando coches a una lista
+        List<Coche> coche = cocheimp.findAll();
+        System.out.println("findAll: "+coche);
         System.out.println("Delete: "+ cocheimp.delete(1));
-        System.out.println("findAll: "+cocheimp.findAll());
+        System.out.println("findAll: "+coche);
 
     }
 }
