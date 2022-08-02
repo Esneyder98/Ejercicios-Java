@@ -1,4 +1,4 @@
-public class SmartDevice {
+public abstract class SmartDevice {
     String nombre ="";
     String marca = "";
     String color = "";
